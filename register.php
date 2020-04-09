@@ -28,7 +28,7 @@ if(isset($_SESSION["loggedIn"]) && !empty($_SESSION["loggedIn"])){
         }
         ?>
         
-         type="text" name="first_name" placeholder="First Name"  />
+         type="text" name="first_name" placeholder="First Name" pattern="[a-zA-Z][a-zA-Z ]{2,}" required />
 
         </p>
         <p>
@@ -40,7 +40,7 @@ if(isset($_SESSION["loggedIn"]) && !empty($_SESSION["loggedIn"])){
             echo "value=" . $_SESSION['last_name'];
         }
         ?>
-         type="text" name="last_name" placeholder="Last Name" />
+         type="text" name="last_name" placeholder="Last Name" pattern="[a-zA-Z][a-zA-Z ]{2,}" required />
         
 
         </p>
